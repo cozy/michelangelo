@@ -1,7 +1,8 @@
 .kss-body {
   margin: 0;
   padding: 0;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  overflow: auto; }
 
 .kss-title {
   margin: 0;
@@ -299,8 +300,7 @@
   padding: 20px;
   padding-top: 80px;
   background: #FFFFFF;
-  transition: opacity 0.4s ease-out;
-  overflow: auto; }
+  transition: opacity 0.4s ease-out; }
   .kss-documentation.kss-state-active {
     opacity: 0.1; }
   @media only screen and (min-width: 64.0625em) {
