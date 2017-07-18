@@ -76,22 +76,35 @@ $kss-modifiers-name-color: $cowabunga;
 }
 
 .kss-parameters {
-  padding-left: 40px;
-  list-style-position: outside;
-  list-style-type: circle;
+  display: table;
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.kss-parameters__item { margin-bottom: 15px; }
+.kss-parameters__title {
+  font-weight: bold;
+}
 
+.kss-parameters__item {
+  display: table-row;
+  margin-bottom: 15px;
+}
 .kss-parameters__name {
+  display: table-cell;
+  padding: 5px 20px 5px 5px;
+  white-space: nowrap;
   background: #f5f5f5;
-  padding: 5px;
 }
-
 .kss-parameters__description {
+  display: table-cell;
   margin: 0;
   font-size: rem(16px);
   line-height: 1.5;
+}
+.kss-parameters__default-value code {
+  white-space: nowrap;
 }
 
 .kss-section__description {
